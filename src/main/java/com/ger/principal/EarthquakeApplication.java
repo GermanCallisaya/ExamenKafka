@@ -25,8 +25,7 @@ public class EarthquakeApplication implements CommandLineRunner {
     }
 
 
-    @Scheduled(fixedRate = 60000)
-    public void scheduleEarthquakeDataFetch() {
+    @Scheduled(fixedRate = 60000)    public void scheduleEarthquakeDataFetch() {
         earthquakeProducer.fetchAndSendEarthquakeData();
     }
 }
